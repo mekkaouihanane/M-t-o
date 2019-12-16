@@ -1,0 +1,40 @@
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body{
+margin: 0;
+padding: 0;
+font-family: Times New Roman;
+background-color: #cceeff;
+background-size: cover;
+text-align: center;
+}
+.Logo img{
+	padding-top: 2%;
+float: left;
+padding-left:5%;
+width:10%;
+height:10%;
+background-color: #cceeff;
+ 
+
+
+}
+.header i{
+padding-top: 2%;
+	float: right;
+	width: 10%;
+	font-size: 70px;
+}
+ .header a{
+  color:orange;
+font-size: 17px;
+
+margin-top:-10%;
+    margin-left: 75%;
+}
+.header p{
+    font-size: 20px;
+    margin-left: 83%;
+    margin-top: 0%;
+    padding-top: 4%;
+
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="Css/AcceuilStyle.css">
+	<script src="Js/JavaScript_Acceuil.js"></script>
+	
+
+</head>
+<body>
+	<script type="text/javascript">
+        window.onload =function Session() {
+        	if(sessionStorage.getItem("UserName")==null)
+        	{
+        		dec.setAttribut("href","Index.html");
+        	}
+        	else if(sessionStorage.getItem("UserName")!=null)
+              {
+            var UserName=document.getElementById("P1");
+            P1.innerHTML=sessionStorage.getItem("UserName");}
+        }
+        </script>
+	<div class="Logo">
+     <img src="Logo/meteo.png">
+	</div>
+	<div class="header">
+
+	<i class="fa fa-user-circle" aria-hidden="true"></i>
+		 <p id="P1"></p>
+	<br>
+      <a id="dec" onclick="Deconnecter()" href="#"> Déconnecter </a>
+    
+    </div>
+
+</body>
+</html>

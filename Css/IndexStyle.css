@@ -1,0 +1,97 @@
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body{
+margin: 0;
+padding: 0;
+font-family: Times New Roman;
+background-color: white;
+background-size: cover;
+text-align: center;
+}
+.login-box{
+
+width: 450px;
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%,-50%);
+color:black;
+background-color:#cceeff;
+border-radius: 10px;
+text-align: center;
+}
+
+.login-box h1{
+	font-size: 40px;
+	margin: 50px;
+	padding: 13px 0;
+	
+
+}
+.textbox{
+	width: 80%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 6px 6px;
+	margin: 8px 8px;
+	border-bottom: 1px solid #cceeff;
+	background-color: white;
+	border-radius: 20px;
+	padding-left:20px;
+	padding-right: 20px;
+
+}
+
+.textbox i{
+
+	float: left;
+	width: 26px;
+}
+
+.textbox input{
+
+border:none;
+outline: none;
+background: none;
+color:black;
+font-size: 18px;
+width: 80%;
+height: 5%;
+
+margin: 0 10px;
+
+}
+.btn{
+
+width: 50%;
+background-color:#2097D4;
+border:2px solid;
+border:none;
+color: white;
+padding: 8px;
+font-size: 20px;
+cursor: pointer;
+margin: 12px 0;
+border-radius: 20px;
+text-align: center;
+height:40px;
+
+}
+.Logo img{
+float: left;
+padding-left:7%;
+width:10%;
+height:10%;
+ 
+
+
+}
+ a{
+  color:gray;
+font-size: 17px;
+float: right;
+padding-right: 9%;
+}
+.Connection i{
+
+	width: 26px;
+}
