@@ -10,14 +10,10 @@
 <body>
 	<script type="text/javascript">
         window.onload =function Session() {
-        	if(sessionStorage.getItem("UserName")==null)
-        	{
-        		dec.setAttribut("href","Index.html");
-        	}
-        	else if(sessionStorage.getItem("UserName")!=null)
-              {
-            var UserName=document.getElementById("P1");
-            P1.innerHTML=sessionStorage.getItem("UserName");}
+                  
+                    var UserName=document.getElementById("P1");
+            UserName.innerHTML=sessionStorage.getItem("UserName");  
+          
         }
         </script>
 	<div class="Logo">
@@ -28,7 +24,7 @@
 	<i class="fa fa-user-circle" aria-hidden="true"></i>
 		 <p id="P1"></p>
 	<br>
-      <a id="dec" onclick="Deconnecter()" href="#"> Déconnecter </a>
+      <a id="dec" onclick="Deconnecter()"> Déconnecter </a>
     
     </div>
 
