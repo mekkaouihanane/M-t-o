@@ -4,29 +4,40 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="Css/AcceuilStyle.css">
 	<script src="Js/JavaScript_Acceuil.js"></script>
-	
+	<link rel="stylesheet"  href="http://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
 
 </head>
 <body>
 	<script type="text/javascript">
         window.onload =function Session() {
-                  
-                    var UserName=document.getElementById("P1");
+                  var su=sessionStorage.getItem("UserName"); 
+                  if(su!=null){
+            var UserName=document.getElementById("P1");
             UserName.innerHTML=sessionStorage.getItem("UserName");  
+            meteo();}
+            else if(su==null){
+            	document.location.href="./Index.html";
+            }
           
         }
         </script>
+        <header>
 	<div class="Logo">
      <img src="Logo/meteo.png">
 	</div>
-	<div class="header">
-
-	<i class="fa fa-user-circle" aria-hidden="true"></i>
-		 <p id="P1"></p>
-	<br>
-      <a id="dec" onclick="Deconnecter()"> Déconnecter </a>
-    
+	<div class="header"><i class="fa fa-user-circle" aria-hidden="true"></i>
+      <p id="P1" style="color: black">ijoijho</p>
+      <a id="dec" onclick="Deconnecter()" href=""> Déconnecter </a>
     </div>
+    </header>
+    <section>
+      
+      	<h1 ><span id="ville"></span></h1>
+        <i class="wi wi-day-rain"></i>
+        <h2> <span id="description"></span> </h2>
+      	<h3> <span id="degre">  </span> °C </h3>
+   
+</section>
 
 </body>
 </html>

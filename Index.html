@@ -7,6 +7,7 @@
 	<script src="Js/JavaScript_Index.js"></script>
 </head>
 <body>
+
 	<div class="Logo">
      <img src="Logo/meteo.png">
 	</div>
@@ -22,13 +23,12 @@
 <br>
 <div class="textbox">
 	<i class="fa fa-lock" aria-hidden="true"></i>
-	<input type="password" id="password" name="" value="" placeholder="Mot de Passe">
+	<input type="password" id="password" name="" value="" placeholder="Mot de Passe"/>
 </div>
 <br>
 <div class="Connection">
-<input type="submit" name="submit" class="btn" onClick="SeConnecter()" value="Se connecter"/>
+<input type="button" id="bt1" name="button" class="btn" onClick="SeConnecter()" value="Se connecter"  />
 <p id="p1" style="color: red; visibility:hidden">kijoiu</p>
-<p id="p2">kijoiu</p>
 </div>
 
 <br>
@@ -37,7 +37,15 @@
  <br>
  <br>
  <br>
- <br>
 </div>
+	<script>
+var input = document.getElementById("password");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("bt1").click();
+  }
+});
+</script>
 </body>
 </html>
